@@ -17,10 +17,10 @@ export const products: Product[] = [
       "Cocok untuk penghargaan karyawan, juara lomba, apresiasi pembicara, atau kenang-kenangan kepengurusan. Setiap plakat bisa membawa QR Letter berisi pesan pribadi dari pemberi penghargaan.",
     ],
     image: {
-      src: "/images/produk-plakat.svg",
-      alt: "Plakat Morvo berbadan filamen rPET hijau dengan alas kayu limbah",
-      width: 800,
-      height: 1000,
+      src: "/images/Produk/plakat.webp",
+      alt: "Plakat Morvo dari filamen rPET bening berbentuk roda gigi dan daun, berdiri di alas kayu limbah dengan pelat nama",
+      width: 1200,
+      height: 1200,
     },
     gallery: [
       {
@@ -72,10 +72,10 @@ export const products: Product[] = [
       "Untuk pesanan dalam jumlah banyak, setiap gantungan bisa membawa QR Letter yang sama (pesan untuk semua peserta) atau berbeda per penerima.",
     ],
     image: {
-      src: "/images/produk-gantungan-kunci.svg",
-      alt: "Gantungan kunci Morvo dari filamen rPET dengan nama timbul",
-      width: 800,
-      height: 1000,
+      src: "/images/Produk/gantungan-kunci.webp",
+      alt: "Gantungan kunci Morvo dari filamen rPET: label bertuliskan MORVO, bintang, spiral hijau, dan mahkota pada cincin kawat",
+      width: 429,
+      height: 459,
     },
     gallery: [
       {
@@ -128,10 +128,10 @@ export const products: Product[] = [
       "Untuk institusi dan event organizer, Morvo membantu dari desain sampai produksi dalam jumlah besar, termasuk cerita asal bahan yang bisa dibagikan ke peserta.",
     ],
     image: {
-      src: "/images/produk-merch.svg",
-      alt: "Kumpulan merch Morvo: tatakan gelas, pembatas buku, dan penyangga ponsel dari rPET",
-      width: 800,
-      height: 1000,
+      src: "/images/Produk/merch.webp",
+      alt: "Tas kanvas Morvo dengan rangkaian gantungan kunci rPET terpasang di talinya",
+      width: 1200,
+      height: 1200,
     },
     gallery: [
       {

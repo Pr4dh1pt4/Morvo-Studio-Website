@@ -40,7 +40,7 @@ export function ProductCard({ product, headingLevel = "h3" }: { product: Product
           width={product.image.width}
           height={product.image.height}
           sizes="(min-width: 1024px) 18rem, 50vw"
-          className="aspect-[4/5] h-auto w-full object-cover transition-transform duration-500 group-hover:scale-[1.03] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+          className="aspect-square h-auto w-full object-cover transition-transform duration-500 group-hover:scale-[1.03] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
         />
       </div>
       <div className="flex flex-1 flex-col gap-3 p-4 md:p-5">

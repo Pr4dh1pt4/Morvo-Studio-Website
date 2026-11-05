@@ -51,7 +51,7 @@ export function ProductDetail({ product, orderHref }: ProductDetailProps) {
               height={first.height}
               priority
               sizes="(min-width: 1024px) 36rem, 100vw"
-              className="aspect-[4/5] h-auto w-full object-cover sm:aspect-[5/4] lg:aspect-[4/5]"
+              className="aspect-square h-auto w-full object-cover"
             />
           </div>
           {rest.map((img) => (
