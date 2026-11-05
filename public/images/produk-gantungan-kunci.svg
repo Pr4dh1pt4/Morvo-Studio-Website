@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img" aria-label="Gantungan kunci rPET dengan nama timbul">
+  <defs>
+  <pattern id="ll" width="8" height="6" patternUnits="userSpaceOnUse">
+    <rect width="8" height="1" fill="#1F4D3A" opacity="0.08"/>
+  </pattern></defs>
+  <rect width="800" height="1000" fill="#F6F1E7"/>
+  <rect width="800" height="1000" fill="url(#ll)"/>
+  <g transform="translate(88 128) scale(1.56)">
+    <circle cx="200" cy="92" r="34" fill="none" stroke="#9AA6A0" stroke-width="7"/>
+    <rect x="186" y="118" width="28" height="30" rx="8" fill="#5B8C5A"/>
+    <rect x="110" y="140" width="180" height="200" rx="36" fill="#A8D1DF"/>
+    <g stroke="#1F4D3A" stroke-width="1.2" opacity=".15"><path d="M112 146h176"/><path d="M112 152h176"/><path d="M112 158h176"/><path d="M112 164h176"/><path d="M112 170h176"/><path d="M112 176h176"/><path d="M112 182h176"/><path d="M112 188h176"/><path d="M112 194h176"/><path d="M112 200h176"/><path d="M112 206h176"/><path d="M112 212h176"/><path d="M112 218h176"/><path d="M112 224h176"/><path d="M112 230h176"/><path d="M112 236h176"/><path d="M112 242h176"/><path d="M112 248h176"/><path d="M112 254h176"/><path d="M112 260h176"/><path d="M112 266h176"/><path d="M112 272h176"/><path d="M112 278h176"/><path d="M112 284h176"/><path d="M112 290h176"/><path d="M112 296h176"/><path d="M112 302h176"/><path d="M112 308h176"/><path d="M112 314h176"/><path d="M112 320h176"/><path d="M112 326h176"/><path d="M112 332h176"/></g>
+    <circle cx="200" cy="176" r="12" fill="#F6F1E7"/>
+    <rect x="140" y="236" width="120" height="16" rx="8" fill="#1F4D3A" opacity=".85"/>
+    <rect x="160" y="264" width="80" height="10" rx="5" fill="#1F4D3A" opacity=".5"/></g>
+  <rect x="48" y="829.1" width="704" height="120.9" rx="18.599999999999998" fill="#FFFDF8" fill-opacity=".92" stroke="#1C2420" stroke-opacity=".25" stroke-dasharray="6 5"/>
+  <text x="400" y="872.5" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="31" font-weight="600" fill="#1C2420">FOTO: Gantungan kunci rPET dengan nama</text><text x="400" y="914.35" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="31" font-weight="600" fill="#1C2420">timbul</text>
+</svg>

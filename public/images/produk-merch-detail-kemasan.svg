@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" role="img" aria-label="Merch dalam kemasan siap bagi untuk peserta acara">
+  <defs>
+  <pattern id="ll" width="8" height="6" patternUnits="userSpaceOnUse">
+    <rect width="8" height="1" fill="#1F4D3A" opacity="0.08"/>
+  </pattern></defs>
+  <rect width="800" height="800" fill="#F6F1E7"/>
+  <rect width="800" height="800" fill="url(#ll)"/>
+  <g transform="translate(88 40) scale(1.56)">
+    <path d="M90 170l110-50 110 50v140l-110 50-110-50z" fill="#8B5E3C" opacity=".85"/>
+    <path d="M90 170l110 50 110-50M200 220v140" stroke="#F6F1E7" stroke-width="3" fill="none" opacity=".6"/>
+    <rect x="236" y="250" width="54" height="34" rx="4" fill="#FFFDF8" transform="rotate(-22 263 267)"/></g>
+  <rect x="48" y="639.1" width="704" height="120.9" rx="18.599999999999998" fill="#FFFDF8" fill-opacity=".92" stroke="#1C2420" stroke-opacity=".25" stroke-dasharray="6 5"/>
+  <text x="400" y="682.5" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="31" font-weight="600" fill="#1C2420">FOTO: Merch dalam kemasan siap bagi untuk</text><text x="400" y="724.35" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="31" font-weight="600" fill="#1C2420">peserta acara</text>
+</svg>

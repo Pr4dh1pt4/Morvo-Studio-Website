@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img" aria-label="Plakat rPET dengan alas kayu limbah, tampak depan">
+  <defs>
+  <pattern id="ll" width="8" height="6" patternUnits="userSpaceOnUse">
+    <rect width="8" height="1" fill="#1F4D3A" opacity="0.08"/>
+  </pattern></defs>
+  <rect width="800" height="1000" fill="#F6F1E7"/>
+  <rect width="800" height="1000" fill="url(#ll)"/>
+  <g transform="translate(88 128) scale(1.56)">
+    <rect x="70" y="300" width="260" height="56" rx="6" fill="#8B5E3C"/>
+    <g stroke="#6F4A2E" stroke-width="2" fill="none" opacity=".5">
+      <path d="M80 318c60-6 120 6 180 0s50-4 60 0"/><path d="M80 336c50 5 110-7 170-1s60 5 70 1"/>
+    </g>
+    <path d="M120 300V96c0-14 10-24 24-24h112c14 0 24 10 24 24v204z" fill="#1F4D3A"/>
+    <g stroke="#F6F1E7" stroke-width="1.2" opacity=".18"><path d="M120 100h160"/><path d="M120 106h160"/><path d="M120 112h160"/><path d="M120 118h160"/><path d="M120 124h160"/><path d="M120 130h160"/><path d="M120 136h160"/><path d="M120 142h160"/><path d="M120 148h160"/><path d="M120 154h160"/><path d="M120 160h160"/><path d="M120 166h160"/><path d="M120 172h160"/><path d="M120 178h160"/><path d="M120 184h160"/><path d="M120 190h160"/><path d="M120 196h160"/><path d="M120 202h160"/><path d="M120 208h160"/><path d="M120 214h160"/><path d="M120 220h160"/><path d="M120 226h160"/><path d="M120 232h160"/><path d="M120 238h160"/><path d="M120 244h160"/><path d="M120 250h160"/><path d="M120 256h160"/><path d="M120 262h160"/><path d="M120 268h160"/><path d="M120 274h160"/><path d="M120 280h160"/><path d="M120 286h160"/><path d="M120 292h160"/><path d="M120 298h160"/></g>
+    <circle cx="200" cy="150" r="30" fill="none" stroke="#A8D1DF" stroke-width="5"/>
+    <rect x="150" y="210" width="100" height="8" rx="4" fill="#F6F1E7" opacity=".8"/>
+    <rect x="165" y="230" width="70" height="6" rx="3" fill="#F6F1E7" opacity=".5"/></g>
+  <rect x="48" y="829.1" width="704" height="120.9" rx="18.599999999999998" fill="#FFFDF8" fill-opacity=".92" stroke="#1C2420" stroke-opacity=".25" stroke-dasharray="6 5"/>
+  <text x="400" y="872.5" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="31" font-weight="600" fill="#1C2420">FOTO: Plakat rPET dengan alas kayu limbah,</text><text x="400" y="914.35" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="31" font-weight="600" fill="#1C2420">tampak depan</text>
+</svg>

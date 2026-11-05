@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" role="img" aria-label="Tatakan gelas rPET dengan kombinasi kayu limbah">
+  <defs>
+  <pattern id="ll" width="8" height="6" patternUnits="userSpaceOnUse">
+    <rect width="8" height="1" fill="#1F4D3A" opacity="0.08"/>
+  </pattern></defs>
+  <rect width="800" height="800" fill="#F6F1E7"/>
+  <rect width="800" height="800" fill="url(#ll)"/>
+  <g transform="translate(88 40) scale(1.56)">
+    <circle cx="140" cy="250" r="88" fill="#8B5E3C"/>
+    <circle cx="140" cy="250" r="62" fill="#A8D1DF"/>
+    <circle cx="140" cy="250" r="62" fill="none" stroke="#1F4D3A" stroke-width="1" opacity=".2" stroke-dasharray="2 4"/>
+    <rect x="236" y="80" width="56" height="210" rx="8" fill="#1F4D3A" transform="rotate(8 264 185)"/>
+    <path d="M300 340l40-120h24l-30 120z" fill="#5B8C5A"/></g>
+  <rect x="48" y="639.1" width="704" height="120.9" rx="18.599999999999998" fill="#FFFDF8" fill-opacity=".92" stroke="#1C2420" stroke-opacity=".25" stroke-dasharray="6 5"/>
+  <text x="400" y="682.5" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="31" font-weight="600" fill="#1C2420">FOTO: Tatakan gelas rPET dengan kombinasi</text><text x="400" y="724.35" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="31" font-weight="600" fill="#1C2420">kayu limbah</text>
+</svg>

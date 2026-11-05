@@ -1,0 +1,188 @@
+@import "tailwindcss";
+
+/* Dark mode dikendalikan class `.dark` di <html> (lihat ThemeScript & ThemeToggle). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ------------------------------------------------------------------
+   Palet Morvo
+   Warna mentah (forest, leaf, ...) + token semantik (bg, surface, fg, ...).
+   Komponen sebaiknya memakai token semantik supaya otomatis menyesuaikan
+   dark mode. Semua pasangan teks/latar sudah dicek ≥ 4.5:1 (WCAG AA).
+   ------------------------------------------------------------------ */
+:root {
+  --forest: #1f4d3a;
+  --leaf: #5b8c5a;
+  --cream: #f6f1e7;
+  --paper: #fffdf8;
+  --wood: #8b5e3c;
+  --pet: #a8d1df;
+  --ink: #1c2420;
+
+  --bg: var(--cream);
+  --surface: var(--paper);
+  --fg: var(--ink);
+  --fg-muted: #4a5650;
+  --heading: var(--forest);
+  --accent-ink: #3e6b3e; /* leaf yang cukup kontras untuk teks kecil */
+  --wood-ink: #7a5233; /* wood yang cukup kontras untuk teks kecil */
+  --line: rgb(28 36 32 / 0.14);
+  --line-strong: rgb(28 36 32 / 0.28);
+  --deep: var(--forest); /* latar section gelap */
+  --on-deep: var(--cream);
+  --on-deep-muted: #c9dccb;
+  --footer: #14241c; /* lebih gelap dari deep supaya logo berwarna terbaca */
+  --primary: var(--forest);
+  --on-primary: var(--cream);
+  --primary-hover: #183e2e;
+
+  color-scheme: light;
+}
+
+.dark {
+  --forest: #1f4d3a;
+  --leaf: #8dbb8b;
+  --cream: #ede8dd;
+  --paper: #1a241f;
+  --wood: #d1a27b;
+  --pet: #a8d1df;
+  --ink: #ede8dd;
+
+  --bg: #121a16;
+  --surface: #1a241f;
+  --fg: #ede8dd;
+  --fg-muted: #b4afa4;
+  --heading: #cfe3c8;
+  --accent-ink: #8dbb8b;
+  --wood-ink: #d1a27b;
+  --line: rgb(237 232 221 / 0.14);
+  --line-strong: rgb(237 232 221 / 0.28);
+  --deep: #173b2c;
+  --on-deep: #ede8dd;
+  --on-deep-muted: #c9dccb;
+  --footer: #0e1612;
+  --primary: #9ccb98;
+  --on-primary: #121a16;
+  --primary-hover: #b4dcb0;
+
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-forest: var(--forest);
+  --color-leaf: var(--leaf);
+  --color-cream: var(--cream);
+  --color-paper: var(--paper);
+  --color-wood: var(--wood);
+  --color-pet: var(--pet);
+  --color-ink: var(--ink);
+
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-fg: var(--fg);
+  --color-muted: var(--fg-muted);
+  --color-heading: var(--heading);
+  --color-accent-ink: var(--accent-ink);
+  --color-wood-ink: var(--wood-ink);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-deep: var(--deep);
+  --color-on-deep: var(--on-deep);
+  --color-on-deep-muted: var(--on-deep-muted);
+  --color-footer: var(--footer);
+  --color-primary: var(--primary);
+  --color-on-primary: var(--on-primary);
+  --color-primary-hover: var(--primary-hover);
+
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), ui-serif, Georgia, serif;
+
+  --radius-card: 12px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  @media (min-width: 768px) {
+    body {
+      font-size: 1.0625rem;
+    }
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    color: var(--heading);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent-ink);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* ------------------------------------------------------------------
+   Motif visual
+   ------------------------------------------------------------------ */
+
+/* Garis layer 3D print: garis horizontal tipis berjarak rapat. */
+@utility layer-lines {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    currentColor 0 1px,
+    transparent 1px 5px
+  );
+}
+
+/* Serat kayu: alur bergelombang halus untuk kartu bermaterial kayu. */
+@utility wood-grain {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='120' viewBox='0 0 240 120'%3E%3Cg fill='none' stroke='%238B5E3C' stroke-width='1' stroke-opacity='.22'%3E%3Cpath d='M0 12c40-6 80 8 120 2s80-10 120-2'/%3E%3Cpath d='M0 30c50 6 70-10 120-4s70 12 120 2'/%3E%3Cpath d='M0 47c30-4 60 6 100 2 50-5 90-12 140-2'/%3E%3Cpath d='M0 66c45 8 85-6 125 0s75 10 115 0'/%3E%3Cpath d='M0 84c35-6 75 4 115 0 45-4 85-10 125 0'/%3E%3Cpath d='M0 103c50 5 80-8 130-3s70 9 110 1'/%3E%3Cellipse cx='176' cy='56' rx='14' ry='5'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 240px 120px;
+}
+
+/* ------------------------------------------------------------------
+   Animasi saat scroll (Reveal). Konten hanya disembunyikan jika JS aktif
+   (class `.js` di <html>) dan pengguna tidak meminta reduced motion.
+   ------------------------------------------------------------------ */
+@media (prefers-reduced-motion: no-preference) {
+  .js [data-reveal] {
+    opacity: 0;
+    transform: translateY(16px);
+    transition:
+      opacity 0.7s ease,
+      transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+  .js [data-reveal][data-visible="true"] {
+    opacity: 1;
+    transform: none;
+  }
+}
