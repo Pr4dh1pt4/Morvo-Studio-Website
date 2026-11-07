@@ -1,56 +1,59 @@
 import type { Partner } from "./types";
 
 /**
- * Mitra Morvo. Semua masih placeholder. Ganti nama, logo (taruh di
- * public/images/mitra/), dan url, lalu ubah isPlaceholder menjadi false.
+ * Mitra Morvo. Logo disimpan di public/images/mitra/.
+ * Untuk menambah mitra: salin satu blok di bawah, ganti id, nama, type, logo
+ * (src, alt, width, height sesuai ukuran asli gambar), dan url (opsional).
+ * Grup tampilan diatur oleh `type`: "komunitas", "bank-sampah", atau "institusi".
  */
 export const partners: Partner[] = [
   {
-    id: "bank-sampah-1",
-    name: "Bank Sampah Mitra 1",
-    type: "bank-sampah",
+    id: "gekrafs-surabaya",
+    name: "GEKRAFS Surabaya",
+    type: "komunitas",
     logo: {
-      src: "/images/mitra/bank-sampah-1.svg",
-      alt: "Logo Bank Sampah Mitra 1",
-      width: 320,
-      height: 160,
+      src: "/images/mitra/gekrafs-surabaya.webp",
+      alt: "Logo GEKRAFS (Gerakan Ekonomi Kreatif Nasional) Surabaya",
+      width: 480,
+      height: 586,
     },
-    isPlaceholder: true,
+    isPlaceholder: false,
   },
   {
-    id: "bank-sampah-2",
-    name: "Bank Sampah Mitra 2",
-    type: "bank-sampah",
+    id: "urbandesign1618",
+    name: "urbandesign1618",
+    type: "komunitas",
     logo: {
-      src: "/images/mitra/bank-sampah-2.svg",
-      alt: "Logo Bank Sampah Mitra 2",
-      width: 320,
-      height: 160,
+      src: "/images/mitra/urbandesign1618.webp",
+      alt: "Logo urbandesign1618",
+      width: 569,
+      height: 230,
     },
-    isPlaceholder: true,
+    isPlaceholder: false,
   },
   {
-    id: "institusi-1",
-    name: "Institusi Pendukung 1",
+    id: "youthgeist-community-forum",
+    name: "Youthgeist Community Forum",
+    type: "komunitas",
+    logo: {
+      src: "/images/mitra/youthgeist-community-forum.webp",
+      alt: "Logo Youthgeist Community Forum Surabaya Chapter",
+      width: 480,
+      height: 531,
+    },
+    isPlaceholder: false,
+  },
+  {
+    id: "its",
+    name: "Institut Teknologi Sepuluh Nopember",
     type: "institusi",
     logo: {
-      src: "/images/mitra/institusi-1.svg",
-      alt: "Logo Institusi Pendukung 1",
-      width: 320,
-      height: 160,
+      src: "/images/mitra/its.webp",
+      alt: "Logo Institut Teknologi Sepuluh Nopember (ITS)",
+      width: 380,
+      height: 380,
     },
-    isPlaceholder: true,
-  },
-  {
-    id: "institusi-2",
-    name: "Institusi Pendukung 2",
-    type: "institusi",
-    logo: {
-      src: "/images/mitra/institusi-2.svg",
-      alt: "Logo Institusi Pendukung 2",
-      width: 320,
-      height: 160,
-    },
-    isPlaceholder: true,
+    url: "https://www.its.ac.id/",
+    isPlaceholder: false,
   },
 ];

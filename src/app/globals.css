@@ -186,3 +186,64 @@
     transform: none;
   }
 }
+
+/* ------------------------------------------------------------------
+   Marquee logo mitra: dua salinan deret logo digeser -50% tanpa henti,
+   jadi sambungannya mulus. Berhenti saat disorot/difokus. Dengan reduced
+   motion, salinan kedua disembunyikan dan logo tampil diam berjajar.
+   ------------------------------------------------------------------ */
+/* Pudar tebal dari kedua tepi: hanya area sempit di tengah yang tampil
+   penuh, jadi logo terlihat muncul satu per satu. Atur lebar area tengah
+   lewat --marquee-hide (tepi yang sepenuhnya tersembunyi) dan --marquee-fade
+   (titik logo tampil penuh). Makin besar angkanya, makin sempit area tengah. */
+.marquee {
+  --marquee-hide: 0%;
+  --marquee-fade: 30%;
+  mask-image: linear-gradient(
+    to right,
+    transparent var(--marquee-hide),
+    #000 var(--marquee-fade),
+    #000 calc(100% - var(--marquee-fade)),
+    transparent calc(100% - var(--marquee-hide))
+  );
+}
+@media (min-width: 768px) {
+  .marquee {
+    --marquee-hide: 22%;
+    --marquee-fade: 42%;
+  }
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+}
+@keyframes marquee-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .marquee-track {
+    animation: marquee-scroll var(--marquee-duration, 40s) linear infinite;
+  }
+  .marquee:hover .marquee-track,
+  .marquee:focus-within .marquee-track {
+    animation-play-state: paused;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee {
+    mask-image: none;
+  }
+  .marquee-track {
+    width: auto;
+    justify-content: center;
+  }
+  .marquee-track > [data-marquee-copy] {
+    display: none;
+  }
+  .marquee-track > ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

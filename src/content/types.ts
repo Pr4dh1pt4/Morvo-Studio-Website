@@ -157,7 +157,7 @@ export interface Stat {
   isEstimate: boolean;
 }
 
-export type PartnerType = "bank-sampah" | "institusi";
+export type PartnerType = "komunitas" | "bank-sampah" | "institusi";
 
 export interface Partner {
   id: string;
